@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Maaş Bordrosu"
+        android:textColor="#1F2A9A"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/AD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adı:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="İsim Giriniz..."
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ÜNVAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ünvan"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-100dp"
+            android:layout_weight="1"
+            android:entries="@array/unvan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MEDENI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="110dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Medeni Hal"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bkr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bekar" />
+
+            <RadioButton
+                android:id="@+id/evlı"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evli" />
+
+            <RadioButton
+                android:id="@+id/dul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dul" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/İKAMET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="125dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="İkamet Türü"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/kıra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kira" />
+
+            <RadioButton
+                android:id="@+id/kndev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kendi Evi" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ÇOCUK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Çocuk Sayısı"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_cck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Çocuk Sayısını Giriniz..."
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yabancı Dil"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="İngilizce" />
+
+        <CheckBox
+            android:id="@+id/alm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almanca" />
+
+        <CheckBox
+            android:id="@+id/rus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rusça" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAAŞI HESAPLA" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+</LinearLayout>
